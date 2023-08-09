@@ -1,0 +1,57 @@
+/* PreAbout.css */
+
+.preAbout {
+ 
+  text-align: center;
+  background-color: green;
+  color: black;
+}
+.conten {
+  text-align: center;
+  position: relative;
+  background-color: #9eceef;
+  color: black;
+}
+
+.animation {
+  width: 200px;
+  height: 200px;
+  background-image: url('D:\RAKSHA\react\mybot\public\images\seconds.gif');
+  background-size: cover;
+  position: relative;
+  margin: 0 auto;
+  animation: floatAnimation 4s infinite alternate;
+}
+
+@keyframes floatAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+.description {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #00090f;
+}
+
+.animated-text {
+  font-size: 24px;
+  color: #00090f;
+  animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+

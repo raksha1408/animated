@@ -1,0 +1,73 @@
+/* Features.css */
+
+.features {
+  background-color: #000000;
+  padding:  0;
+  height: 700px;
+}
+
+.section-title {
+  font-size: 36px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #ff33bb;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.text-boxes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+  transition: opacity 0.5s ease, transform 0.5s ease, border-color 0.5s ease;
+}
+
+.animated-text-box {
+  flex: 1;
+  padding: 20px;
+  background-color: #4ff5498f;
+  margin-right: 10px;
+  opacity: 30;
+  color: aliceblue;
+  transform: translateX(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease, border-color 0.5s ease;
+  border: 5px ; /* Add border styles */
+  border-radius: 10px;
+}
+
+.animated-text-box h3 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.animated-text-box p {
+  font-size: 16px;
+}
+
+.animated-text-box:hover {
+  opacity: 0.8;
+  transform: translateY(-5px);
+}
+
+
+.animate{
+  width: 300px;
+  height: 300px;
+  background-image: url('D:\RAKSHA\react\mybot\public\images\feat.gif');
+  background-size: cover;
+  animation: fadeIn 1s ease-in;
+  margin-left: 40%;
+}
+.text-boxes:hover .animated-text-box {
+  opacity: 1;
+  transform: translate-X(0);
+
+
+}

@@ -1,0 +1,98 @@
+/* Hero.css */
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url('D:\RAKSHA\react\mybot\public\images\herobg.avif'); /* Replace with your background image URL */
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+.content {
+  text-align: center;
+  position: relative;
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+  animation: fadeIn 3s ease-in;
+}
+
+.animated-image {
+  width: 400px;
+  height: 400px;
+  background-image: url('D:\RAKSHA\react\mybot\public\images\bubble.gif'); /* Replace with your animated image URL */
+  background-size: cover;
+  position: relative;
+  margin-top: 10px;
+  top: 10px;
+  left: 0%;
+  transform: translateX(-50%);
+  animation: floatAnimation 4s infinite alternate;
+ 
+}
+
+@keyframes floatAnimation {
+  0% {
+    transform: translateX(-50%) translateY(0);
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50px);
+  }
+}
+
+.title {
+  font-size: 28px;
+  margin: 20px 0;
+  animation: fadeIn 3s ease-in;
+}
+
+.description {
+  font-size: 18px;
+  margin-bottom: 30px;
+  animation: fadeIn 1s ease forwards;
+}
+
+.btn {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #297cb1;
+}
+.heading {
+  font-size: 25px;
+  margin-top: 0px;
+  opacity: 50;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+  color: #fff;
+}
+
+.heading.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+
